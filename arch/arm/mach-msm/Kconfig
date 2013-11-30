@@ -2731,6 +2731,12 @@ config MSM_DCVS
 	  algorithm and the algorithm returns a frequency for the core which is
 	  passed to the frequency change driver.
 
+config SEC_LOG_LAST_KMSG
+        default y
+        bool "Enable /proc/last_kmsg support: if EMBEDDED"
+        help
+	  This option enables /proc/last_kmsg support.
+
 config MSM_CPR
 	tristate "Use MSM CPR in S/W mode"
 	help
